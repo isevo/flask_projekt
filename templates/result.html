@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    {% block content %}
+    <center>
+        <div class="alert alert-success" role="alert">
+           <h1>YOU HAVE LOGED IN!!! WELL DONE!</h1>
+        </div>        
+        <h3>Your email and username:</h3>
+        {% for key,value in result.items() %}
+            <h3>{{value}}</h3>
+        {% endfor %}
+
+
+    </center>
+
+    {% endblock %} 
+
+
+
+
+</body>
+</html>

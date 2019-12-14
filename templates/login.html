@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<center>
+<form action="http://localhost:5000/result" method="POST">
+
+	
+	<form>
+		<div class="form-group">
+			<p>Name:</p>
+			<p><input type="text" name="nm" /></p>
+		  <label for="exampleInputEmail1">Email address</label>
+		  <input type="email" attern=".{8,}"   required title="8 characters minimum"  minlength="8" required class="form-control" name="exampleInputEmail1" aria-describedby="emailHelp">
+		  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		</div>
+		<div class="form-group">
+		  <label for="exampleInputPassword1">Password</label>
+		  <input type="password" attern=".{8,}"   required title="8 characters minimum"  minlength="8" required class="form-control" id="exampleInputPassword1">
+		</div>
+		<p><input type="submit" value="submit"/></p>
+	  </form>
+</form>
+</center>
+{% endblock %}
+
+
+ 
